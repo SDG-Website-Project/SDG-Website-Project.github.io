@@ -1,78 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Feedback Form</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
     <!-- Background Video -->
     <video autoplay loop muted playsinline id="bg-video">
-        <source src="video.mp4" type="video/mp4">
-        Your browser does not support the video tag.
+      <source src="media\video.mp4"/>
+      Your browser does not support the video tag.
     </video>
 
-
     <div class="container">
-        <form id="feedback-form">
-            <h1>Give Your Feedback</h1>
-            
-            <!-- Name Input -->
-            <div class="input-group">
-                <label for="fullname">Enter your Name:</label>
-                <input type="text" id="fullname" name="FullName" placeholder="Your Name">
-            </div>
+      <form id="feedback-form">
+        <h1>Give Your Feedback</h1>
 
-            <!-- Email Input -->
-            <div class="input-group">
-                <label for="email">Enter your Email:</label>
-                <input type="email" id="email" name="Email" placeholder="Enter your Email">
-            </div>
+        <!-- Name Input -->
+        <div class="input-group">
+          <label for="fullname">Enter your Name:</label>
+          <input
+            type="text"
+            id="fullname"
+            name="FullName"
+            placeholder="Your Name"
+          />
+        </div>
 
-            <!-- First-time Visit -->
-            <fieldset>
-                <legend>Was this your first time visiting?</legend>
-                <label> <input type="radio" name="first-visit" value="yes"> Yes</label>
-                <label> <input type="radio" name="first-visit" value="no"> No</label>
-            </fieldset>
+        <!-- Email Input -->
+        <div class="input-group">
+          <label for="email">Enter your Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="Email"
+            placeholder="Enter your Email"
+          />
+        </div>
 
-            <!-- Website Experience -->
-            <fieldset>
-                <legend>Was this website informative and easy to navigate?</legend>
-                <label> <input type="radio" name="navigation" value="yes"> Yes</label>
-                <label> <input type="radio" name="navigation" value="no"> No</label>
-            </fieldset>
+        <!-- First-time Visit -->
+        <fieldset>
+          <legend>Was this your first time visiting?</legend>
+          <label>
+            <input type="radio" name="first-visit" value="yes" /> Yes</label
+          >
+          <label>
+            <input type="radio" name="first-visit" value="no" /> No</label
+          >
+        </fieldset>
 
-            <!-- Improvement Suggestions -->
-            <fieldset>
-                <legend>If "No", suggest any improvements for the future:</legend>
-                <textarea id="improvements" cols="50" rows="4" placeholder="Enter your opinions here..."></textarea>
-            </fieldset>
+        <!-- Website Experience -->
+        <fieldset>
+          <legend>Was this website informative and easy to navigate?</legend>
+          <label>
+            <input type="radio" name="navigation" value="yes" /> Yes</label
+          >
+          <label> <input type="radio" name="navigation" value="no" /> No</label>
+        </fieldset>
 
-            <!-- Subscription Preferences -->
-            <fieldset>
-                <legend>Would you like to receive updates about the website and offers?</legend>
-                <label for="updates-method">Choose a method:</label>
-                <select id="updates-method" name="subscription-method">
-                    <option value="email">Email</option>
-                    <option value="phone">Mobile Number</option>
-                    <option value="sms">SMS</option>
-                </select>
-            </fieldset>
+        <!-- Improvement Suggestions -->
+        <fieldset>
+          <legend>If "No", suggest any improvements for the future:</legend>
+          <textarea
+            id="improvements"
+            cols="50"
+            rows="4"
+            placeholder="Enter your opinions here..."
+          ></textarea>
+        </fieldset>
 
-            <!-- Additional Questions -->
-            <fieldset>
-                <legend>Do you have any additional questions or requests?</legend>
-                <textarea id="additional-comments" cols="50" rows="4" placeholder="Add your thoughts here..."></textarea>
-            </fieldset>
+        <!-- Subscription Preferences -->
+        <fieldset>
+          <legend>
+            Would you like to receive updates about the website and offers?
+          </legend>
+          <label for="updates-method">Choose a method:</label>
+          <select id="updates-method" name="subscription-method">
+            <option value="email">Email</option>
+            <option value="phone">Mobile Number</option>
+            <option value="sms">SMS</option>
+          </select>
+        </fieldset>
 
-            <!-- Submit Button -->
-            <button type="submit" id="submit-btn">Send</button>
-        </form>
+        <!-- Additional Questions -->
+        <fieldset>
+          <legend>Do you have any additional questions or requests?</legend>
+          <textarea
+            id="additional-comments"
+            cols="50"
+            rows="4"
+            placeholder="Add your thoughts here..."
+          ></textarea>
+        </fieldset>
+
+        <!-- Submit Button -->
+        <button type="submit" id="submit-btn">Send</button>
+      </form>
     </div>
-    <script src="script.js"></script> <!-- Link JavaScript -->
-</body>
+    <script src="script.js"></script>
+    <!-- Link JavaScript -->
+  </body>
 </html>
-
